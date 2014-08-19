@@ -59,7 +59,7 @@
     "start": "sh ./lib/bin/cloud9.sh",
     "build-debug": "node .lib//scripts/build-debug",
     "build-packed": "node ./lib/scripts/build-packed",
-    "postinstall": "./lib/postinstall.sh"
+    "postinstall": "ln -s ./node_modules ./lib/node_modules && ./lib/postinstall.sh"
   },
   "bugs": {
     "url": "https://github.com/jlamendo/vicarius-IDE/issues"
