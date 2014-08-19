@@ -62,7 +62,7 @@
     "postinstall": "make ./lib/ace"
   },
   "bugs": {
-    "url": "https://github.com/ajaxorg/cloud9/issues"
+    "url": "https://github.com/jlamendo/vicarius-IDE/issues"
   },
   "main": "index.js",
   "keywords": [
