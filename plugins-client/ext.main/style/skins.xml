@@ -157,14 +157,11 @@
         }
 
         .c9-menu-bar .c9-mbar-bcont .c9-offline {
-            width:42px;
-            height:21px;
+            width:0px;
+            height:0px;
             position:absolute;
-            background:url(images/offline.png) no-repeat 0 0;
-            top:26px;
-            right: 3px;
             display: none;
-            z-index: 100000;
+            z-index: 0;
         }
 
         .c9-menu-bar.offline .c9-mbar-bcont .c9-offline {
@@ -172,14 +169,14 @@
         }
 
         .c9-menu-bar .c9-mbar-bcont .c9-local {
-            width:42px;
-            height:21px;
+            width:0px;
+            height:0px;
             position:absolute;
             background:url(images/local_green.png) no-repeat 0 0;
-            top:40px;
-            right: 3px;
-            display: none;
-            z-index: 100000;
+            top:0px;
+            right: 0px;
+            display: hidden;
+            z-index: 1;
         }
 
         .c9-menu-bar.offline.local .c9-mbar-bcont .c9-local {
@@ -202,7 +199,7 @@
             min-height: 0px;
             max-width: 9998px;
             max-height: 9992px;
-            display: none;
+            display: hidden;
             opacity: 1;
             padding: 5px 7px 7px 9px;
             color: #BDBDBD;
@@ -270,7 +267,6 @@
             cursor: default;
         }
         .c9-mbar-round {
-            background : url(images/c9-no-repeat.png) no-repeat 0 0;
             height: 37px;
             pointer-events: none;
             position: fixed;
@@ -280,15 +276,14 @@
             z-index: 999;
         }
         .c9-mbar-round .mainlogo {
-            background: url("images/c9-no-repeat.png") no-repeat 0 -44px;
-            display: block;
-            height: 26px;
+            display: hidden;
+            height: 0px;
             left: 33px;
             pointer-events: all;
             position: absolute;
             text-indent: 100%;
             top: 4px;
-            width: 37px;
+            width: 0px;
         }
        .updateAvailable .c9-mbar-round .mainlogo {
            background: url("images/c9-no-repeat.png") no-repeat -96px -44px;
@@ -365,7 +360,7 @@
     <a:presentation>
         <a:main container="div/div/div[1]">
             <div class="c9-menu-bar">
-                <div class="c9-mbar-logo">
+                <div class="c9-mbar-logos">
                     <div class="c9-mbar-bcont">
                         <div class="c9-mbar-cont"> </div>
 
@@ -11312,7 +11307,7 @@
         .tb_console.tb_textboxInitial .input {
             font-size : 10px;
         }
-        
+
         .tb_console.tb_textboxInitial .ace_cursor{
             display : none;
         }
