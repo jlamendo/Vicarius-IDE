@@ -1,15 +1,15 @@
  var forever = require('forever-monitor');
 
-module.exports = function(ports, dataDir) {
+module.exports = function(port, dataDir) {
   var child = new (forever.Monitor)('cloud9.sh', {
     command: '/bin/bash',
     options: [
             '-w', dataDir,
-            '-p', ports.IDE,
+            '-p', port,
         ],
     sourceDir: __dirname + '/lib/bin/',
     max: 3,
-    silent: true,
+    silent: false,
     options: []
   });
 
