@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://git@github.com:jlamendo/vicarius-IDE.git"
+    "url": "git://github.com/jlamendo/vicarius-IDE.git"
   },
   "licenses": [
     {
