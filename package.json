@@ -1,15 +1,15 @@
 {
   "name": "vicarius-IDE",
-  "description": "Cloud9 IDE",
+  "description": "IDE for the Vicarius proxy System (Cloud9 IDE)",
   "version": "0.7.0",
-  "homepage": "http://github.com/ajaxorg/cloud9",
+  "homepage": "http://vicarius.io",
   "engines": {
     "node": ">= 0.6.15"
   },
   "author": "Ajax.org B.V. <info@ajax.org>",
   "help": {
     "web": "https://github.com/ajaxorg/cloud9/blob/master/README.md",
-    "cli": "./scripts/help.js"
+    "cli": "./lib/scripts/help.js"
   },
   "dependencies": {
     "jsDAV": "https://github.com/ajaxorg/jsDAV/tarball/f78c34c94fa915ca1b24975839b78ff88ea851d6",
@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ajaxorg/cloud9.git"
+    "url": "git://github.com/jlamendo/vicarius-IDE.git"
   },
   "licenses": [
     {
@@ -56,10 +56,10 @@
     }
   ],
   "scripts": {
-    "start": "sh ./bin/cloud9.sh",
-    "build-debug": "node ./scripts/build-debug",
-    "build-packed": "node ./scripts/build-packed",
-    "postinstall": "make ace"
+    "start": "sh ./lib/bin/cloud9.sh",
+    "build-debug": "node .lib//scripts/build-debug",
+    "build-packed": "node ./lib/scripts/build-packed",
+    "postinstall": "make ./lib/ace"
   },
   "bugs": {
     "url": "https://github.com/ajaxorg/cloud9/issues"
@@ -70,5 +70,8 @@
     "Proxy",
     "Mitm"
   ],
-  "license": "GPL"
+  "license": {
+      "type": "GPLv3",
+      "url": "http://www.gnu.org/licenses/gpl-3.0.txt"
+    }
 }
