@@ -38,7 +38,7 @@
             </a:bar>
         </a:bar>
 
-        <a:hsplitbox>
+        <a:hsplitbox style="margin-top:-5px">
             <a:vsplitbox id="consoleRow" splitter="true">
                 <a:vsplitbox id="searchRow">
                     <a:vsplitbox id="editorRow">
