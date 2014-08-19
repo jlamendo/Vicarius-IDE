@@ -1,5 +1,5 @@
 {
-  "name": "cloud9",
+  "name": "vicarius-IDE",
   "description": "Cloud9 IDE",
   "version": "0.7.0",
   "homepage": "http://github.com/ajaxorg/cloud9",
@@ -60,5 +60,15 @@
     "build-debug": "node ./scripts/build-debug",
     "build-packed": "node ./scripts/build-packed",
     "postinstall": "make ace"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ajaxorg/cloud9/issues"
+  },
+  "main": "index.js",
+  "keywords": [
+    "Vicarius",
+    "Proxy",
+    "Mitm"
+  ],
+  "license": "GPL"
 }
