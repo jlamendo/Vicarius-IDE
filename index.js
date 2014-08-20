@@ -9,16 +9,17 @@ module.exports = function(port, dataDir) {
         ],
     sourceDir: __dirname + '/lib/bin/',
     max: 3,
-    silent: false,
+    silent: true,
     options: []
   });
 
   child.on('exit', function (e) {
-    console.log('IDE has exited after 3 restarts');
+    console.log('IDE has exited after 3 restarts:');
   });
-  process.on('exit', function(){
-    child.exit();
-  })
+child.on('disconnect', function() {
+  console.log('parent exited')
+  child.exit();
+});
   child.start();
 };
 
